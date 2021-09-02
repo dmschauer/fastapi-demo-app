@@ -1,0 +1,6 @@
+id;name;price;is_early_bird
+1;"Python";5,99;true
+2;"FastAPI";16,99;true
+3;"Docker";12,99;true
+4;"Pandas";12,99;false
+5;"Git";5,99;false
