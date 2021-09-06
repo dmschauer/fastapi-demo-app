@@ -14,7 +14,7 @@ In the root directory of this project, run the following command:
 This will create an image based on the Dockerfile found in the current working directory (specified by the dot at the end of the command) and give it the tag name fastapi-demo-app, used for easier access.
 
 To double-check that it worked use the following command to list your Docker images, you should find one named fastapi-demo-app with version number 1.0:
-docker image ls
+`docker image ls`
 
 # Run container based on image
 Now that you got the image, you can run a container based on it. To do so run the following command:
