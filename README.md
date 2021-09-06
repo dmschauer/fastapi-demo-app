@@ -22,6 +22,8 @@ Now that you got the image, you can run a container based on it. To do so run th
 
 This will create and run a container named coursesapi and map port 8000 from within the Docker container to port 5000 on your machine, i.e. the mapping is Local:Container. Now if you access port 5000 on localhost, your request will be forwarded to within the Docker container listening on it.
 
+Alternatively you can run `docker-compose up`. It will also start the container (under a different name) with the same port mapping specified in `docker-compose.yml`.
+
 # In real life...
 
 ...you would typically PUSH your image onto a Docker image registry from where someone else can PULL it.
