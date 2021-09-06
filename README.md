@@ -1,5 +1,5 @@
 # What is this?
-To get a better understanding of Docker and FastAPI, I created a basic API using these two technologies.
+To get a better understanding of Docker and FastAPI, I created a basic API using these two technologies. At the end of this page you can see the API in action.
 
 You have a few endpoints to do CRUD operations on a fake database that is actually just a Python dictionary object.
 
@@ -9,7 +9,7 @@ Since this is a very basic Docker learning project, here are also instructions o
 
 # Build image
 In the root directory of this project, run the following command:
-docker build -t fastapi-demo-app:1.0  .
+`docker build -t fastapi-demo-app:1.0  .`
 
 This will create an image based on the Dockerfile found in the current working directory (specified by the dot at the end of the command) and give it the tag name fastapi-demo-app, used for easier access.
 
@@ -18,7 +18,7 @@ docker image ls
 
 # Run container based on image
 Now that you got the image, you can run a container based on it. To do so run the following command:
-docker run -d --name courses-api -p 5000:8000 fastapi-demo-app:1.0
+`docker run -d --name courses-api -p 5000:8000 fastapi-demo-app:1.0`
 
 This will create and run a container named coursesapi and map port 8000 from within the Docker container to port 5000 on your machine, i.e. the mapping is Local:Container. Now if you access port 5000 on localhost, your request will be forwarded to within the Docker container listening on it.
 
@@ -37,3 +37,8 @@ Micro-services: https://ahmed-nafies.medium.com/why-did-we-choose-fast-api-over-
 - Learn Docker in 7 Easy Steps - Full Beginner's Tutorial: https://www.youtube.com/watch?v=gAkwW2tuIqE
 
 - Deploy with Docker - FastAPI: https://fastapi.tiangolo.com/deployment/docker/
+
+
+# Demo app in action
+
+![Alt Text](https://i.imgur.com/1tO3tf5.gif)
