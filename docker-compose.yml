@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  fastapidemoapp:
+    build: '.'
+    ports:
+      - "5000:8000"
